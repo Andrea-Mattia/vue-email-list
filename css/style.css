@@ -1,0 +1,34 @@
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/* UTILITIES */
+.df {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* LAYOUT */
+#app {
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.content {
+    width: 300px;
+    background: lightskyblue;
+    border-radius: 10px;
+}
+
+.email-list li {
+    list-style: none;
+    margin: 1rem 0;
+}

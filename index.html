@@ -12,8 +12,19 @@
 </head>
 <body>
     
+    <div id="app" class="df">
+        <h1>Email List</h1>
+        <div class="content df">
+            <ul class="email-list">
+                <li v-for="email in emailList">
+                    {{ email }}
+                </li>
+            </ul>
+        </div>
+    </div>
 
     <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
