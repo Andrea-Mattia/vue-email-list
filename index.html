@@ -15,11 +15,14 @@
     <div id="app" class="df">
         <h1>Email List</h1>
         <div class="content df">
-            <ul class="email-list">
+            <ul class="email-list"
+                v-if="emailGenerated"
+            >
                 <li v-for="email in emailList">
                     {{ email }}
                 </li>
             </ul>
+            <div v-else class="spinner"></div>
         </div>
     </div>
 

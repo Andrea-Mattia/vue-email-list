@@ -12,6 +12,11 @@ const app = new Vue({
         emailList: [],
         emailNumber: 10,
     },
+    computed: {
+        emailGenerated() {
+            return this.emailList.length === this.emailNumber;
+        },
+    },
     created() {
         // API call
         for (let i = 0; i < this.emailNumber; i++) {
